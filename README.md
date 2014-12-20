@@ -41,3 +41,7 @@ Development
 Go to the **src** directory. If Love2D has been updated, run **scrape_api.py**, which generates **api.txt** and **callbacks.txt**, then run **build.py** which assembles the Sublime files.
 
 **Love.JSON-tmLanguage** is an expanded version of the Lua syntax highlighter. Leave the **lua-love** repository entry empty, as its filled in by **build.py**
+
+GLSL
+====
+The GLSL syntax highlighting has been adapted from the upstream repo `euler0/sublime-glsl <https://github.com/euler0/sublime-glsl>`_. This file is released into the public domain, as per the source repo.
