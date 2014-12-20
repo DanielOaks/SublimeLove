@@ -44,4 +44,4 @@ Go to the **src** directory. If Love2D has been updated, run **scrape_api.py**, 
 
 GLSL
 ====
-The GLSL syntax highlighting has been adapted from the upstream repo `euler0/sublime-glsl <https://github.com/euler0/sublime-glsl>`_. This file is released into the public domain, as per the source repo.
+The GLSL syntax highlighting has been adapted from the upstream repo [euler0/sublime-glsl](https://github.com/euler0/sublime-glsl). This file is released into the public domain, as per the source repo.
