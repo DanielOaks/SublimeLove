@@ -28,7 +28,7 @@
 	<key>keyEquivalent</key>
 	<string>^~G</string>
 	<key>name</key>
-	<string>LoveGLSL</string>
+	<string>GLSL (Love)</string>
 	<key>patterns</key>
 	<array>
 		<dict>
