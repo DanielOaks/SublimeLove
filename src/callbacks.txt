@@ -1,7 +1,7 @@
 love.draw
 love.errhand,msg
 love.focus,f
-love.gamepadaxis,joystick,axis
+love.gamepadaxis,joystick,axis,value
 love.gamepadpressed,joystick,button
 love.gamepadreleased,joystick,button
 love.joystickadded,joystick
