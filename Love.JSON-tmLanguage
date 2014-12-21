@@ -133,7 +133,7 @@
             "name": "support.function.library.lua.love"
         },
         "love-pixel-effect": {
-            "begin": "(love\\.graphics\\.newPixelEffect)\\(*\\s*(?<!--)(\\[(=*)\\[)",
+            "begin": "(love\\.graphics\\.(?:newShader|newPixelEffect))\\(*\\s*(?<!--)(\\[(=*)\\[)",
             "beginCaptures": {
                 "1": { "name": "support.function.library.lua.love" },
                 "2": { "name": "string.quoted.other.multiline.lua" }
@@ -143,9 +143,9 @@
                 "1": { "name": "string.quoted.other.multiline.lua" }
             },
             "patterns": [
-                { "include": "source.c" }
+                { "include": "source.glsl.love" }
             ],
-            "comment": "C syntax highlighting for GLSL on newPixelEffect"
+            "comment": "Love GLSL highlighting on newPixelEffect / newShaderEffect"
         }
     }, 
     "scopeName": "source.lua.love", 

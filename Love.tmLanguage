@@ -167,7 +167,7 @@
 		<key>love-pixel-effect</key>
 		<dict>
 			<key>begin</key>
-			<string>(love\.graphics\.newPixelEffect)\(*\s*(?&lt;!--)(\[(=*)\[)</string>
+			<string>(love\.graphics\.(?:newShader|newPixelEffect))\(*\s*(?&lt;!--)(\[(=*)\[)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -182,7 +182,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>C syntax highlighting for GLSL on newPixelEffect</string>
+			<string>Love GLSL highlighting on newPixelEffect / newShaderEffect</string>
 			<key>end</key>
 			<string>(\]\])\)*</string>
 			<key>endCaptures</key>
@@ -197,7 +197,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>source.c</string>
+					<string>source.glsl.love</string>
 				</dict>
 			</array>
 		</dict>
@@ -225,7 +225,7 @@
 		<key>lua-love</key>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![^.]\.|:)\b(love\.(sound\.(newDecoder|newSoundData)|audio\.(setOrientation|play|getVolume|getVelocity|resume|newSource|getDistanceModel|rewind|getOrientation|stop|pause|getNumSources|setDistanceModel|setPosition|setVelocity|getPosition|setVolume)|thread\.(newThread|getThread|getThreads)|keyboard\.(getKeyRepeat|isDown|setKeyRepeat)|physics\.(newWheelJoint|newChainShape|setMeter|newGearJoint|newWeldJoint|newRectangleShape|newFrictionJoint|newPulleyJoint|newFixture|newEdgeShape|newWorld|newMouseJoint|newBody|newRevoluteJoint|getDistance|newPrismaticJoint|newPolygonShape|newRopeJoint|getMeter|newDistanceJoint|newCircleShape)|image\.(newImageData)|filesystem\.(load|getUserDirectory|exists|mkdir|read|getWorkingDirectory|lines|isDirectory|remove|write|init|isFile|getLastModified|enumerate|getAppdataDirectory|newFileData|getSaveDirectory|setIdentity|setSource|newFile)|timer\.(getDelta|getTime|step|sleep|getFPS|getMicroTime)|graphics\.(getPointStyle|setDefaultImageFilter|point|getMaxPointSize|newParticleSystem|printf|setColorMode|getMode|pop|getCaption|arc|translate|setFont|getBackgroundColor|setLineStyle|newStencil|setLineWidth|setStencil|triangle|isSupported|newImageFont|scale|getPointSize|drawq|getColorMode|setScissor|toggleFullscreen|getHeight|hasFocus|newFont|newPixelEffect|setPoint|print|getModes|circle|setNewFont|setIcon|rectangle|getScissor|reset|draw|newScreenshot|getFont|getDefaultImageFilter|setPointSize|getColor|setBackgroundColor|setInvertedStencil|setCanvas|setBlendMode|isCreated|newSpriteBatch|setMode|setLine|quad|line|setCaption|present|polygon|checkMode|getWidth|rotate|setPointStyle|newQuad|setPixelEffect|getPixelEffect|clear|newCanvas|getCanvas|getLineWidth|getBlendMode|shear|push|newImage|setColor|getLineStyle)|joystick\.(getNumAxes|isOpen|getAxis|getNumBalls|getName|getBall|getNumJoysticks|getNumHats|open|getHat|getNumButtons|close|isDown|getAxes)|font\.(newGlyphData|newRasterizer)|mouse\.(getX|getY|isGrabbed|isVisible|setGrab|isDown|setVisible|setPosition|getPosition)|event\.(quit|clear|pump|push|poll|wait)))\b(?=[( {])</string>
+			<string>(?&lt;![^.]\.|:)\b(love\.(sound\.(newDecoder|newSoundData)|audio\.(setOrientation|play|getVolume|getVelocity|resume|newSource|getDistanceModel|getOrientation|stop|pause|getPosition|rewind|setDistanceModel|setPosition|setVelocity|getSourceCount|setVolume)|thread\.(newChannel|newThread|getChannel)|keyboard\.(setKeyRepeat|isDown|hasTextInput|hasKeyRepeat|setTextInput)|physics\.(newWheelJoint|newChainShape|setMeter|newGearJoint|newWeldJoint|newRectangleShape|newFrictionJoint|newPulleyJoint|newFixture|newEdgeShape|newWorld|newMouseJoint|newBody|newRevoluteJoint|getDistance|newPrismaticJoint|newPolygonShape|newRopeJoint|getMeter|newDistanceJoint|newCircleShape)|image\.(isCompressed|newCompressedData|newImageData)|filesystem\.(load|exists|getSize|isDirectory|append|getUserDirectory|unmount|getIdentity|write|init|setSource|newFileData|setIdentity|newFile|read|getLastModified|getSaveDirectory|mount|lines|remove|getDirectoryItems|getWorkingDirectory|getAppdataDirectory|createDirectory|isFile|isFused)|system\.(setClipboardText|getPowerInfo|getClipboardText|getProcessorCount|getOS)|timer\.(getDelta|getTime|step|sleep|getAverageDelta|getFPS)|window\.(getMode|getFullscreenModes|setMode|setFullscreen|getDesktopDimensions|getIcon|setIcon|getFullscreen|getHeight|getDimensions|getWidth|hasFocus|isCreated|getTitle|isVisible|setTitle|getDisplayCount|hasMouseFocus)|graphics\.(getPointStyle|origin|newShader|getShader|point|getMaxPointSize|getRendererInfo|printf|setCanvas|pop|getWidth|arc|setFont|getBackgroundColor|setLineStyle|newCanvas|setLineWidth|setStencil|setShader|isSupported|newImageFont|scale|getPointSize|translate|newMesh|getHeight|newQuad|newFont|setInvertedStencil|print|circle|setNewFont|newParticleSystem|rectangle|getScissor|draw|newScreenshot|getFont|setPointSize|getColor|setBackgroundColor|setColorMask|getDimensions|setBlendMode|getColorMask|newSpriteBatch|setLineJoin|line|setScissor|present|polygon|reset|getDefaultFilter|rotate|setPointStyle|getLineJoin|clear|getLineStyle|getCanvas|getLineWidth|getBlendMode|shear|push|newImage|setColor|getMaxImageSize|setDefaultFilter)|joystick\.(getJoystickCount|setGamepadMapping|getJoysticks)|font\.(newGlyphData|newRasterizer)|mouse\.(setX|setGrabbed|getSystemCursor|newCursor|setY|getX|getY|isGrabbed|getCursor|isVisible|isDown|setVisible|setPosition|getPosition|setCursor)|event\.(quit|clear|pump|push|poll|wait)|math\.(isConvex|noise|getRandomSeed|random|triangulate|setRandomSeed|newRandomGenerator|randomNormal|newBezierCurve)))\b(?=[( {])</string>
 			<key>name</key>
 			<string>support.function.library.lua.love</string>
 		</dict>

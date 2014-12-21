@@ -97,7 +97,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.glsl</string>
+	<string>source.glsl.love</string>
 	<key>uuid</key>
 	<string>D0FD1B52-F137-4FBA-A148-B8A893CD948C</string>
 </dict>
